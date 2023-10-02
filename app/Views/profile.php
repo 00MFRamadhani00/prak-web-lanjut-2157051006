@@ -19,32 +19,24 @@
         }
     </style>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="<?= base_url('aset/css/style.css') ?>">
+
 </head>
 <body>
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-4 text-center">
-                <div class="profile-image rounded-circle bg-secondary p-4">
-                    <!-- Di sini Anda bisa memasukkan gambar profil -->
-                </div>
-                <br>
-
-                <div class="info-box bg-light p-4">
-                    <p class="mb-0"><?= $nama ?></p>
-                </div>
-
-                <div class="info-box bg-light p-4">
-                    <p class="mb-0"><?= $kelas ?></p>
-                </div>
-
-                <div class="info-box bg-light p-4">
-                    <p class="mb-0"><?= $npm ?></p>
-                </div>
+    <div class="profile-card">
+            <div class="pic">
+                <img src="<?php echo base_url('aset/img/card.png'); ?>" alt="">
             </div>
-        </div>
+            <div class="card-header">
+                <div class="name"><?= $nama ?></div>
+            </div>
+            <div class="card-header">
+                <div class="name"><?= $kelas ?></div>
+            </div>
+            <div class="card-header">
+                <div class="name"><?= $npm ?></div>
+            </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

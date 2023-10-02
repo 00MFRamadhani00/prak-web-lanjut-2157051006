@@ -16,6 +16,6 @@ class Home extends BaseController
             'kelas' => $kelas,
             'npm' => $npm,
         ];
-        return view('profile', $data);
+        return view('UserController', $data);
     }
 }
